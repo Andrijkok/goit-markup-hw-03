@@ -1,0 +1,218 @@
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+:root {
+  --primary-text-color-them-dark: #212121;
+  --primary-text-color-them-gray: #757575;
+  --secondary-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --background-color-them-white: #ffffff;
+  --background-color-them-dark: #2f303a;
+  --background-color-them-grey: #f5f4fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color-them-dark);
+}
+
+/*==================== HEADER ====================*/
+.header {
+  background-color: var(--background-color-them-white);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.94;
+  color: #2196f3;
+}
+
+.logo-header {
+  color: #000000;
+}
+
+.site-nav .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-them-dark);
+}
+
+.contacts-link .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-them-gray);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-link .link:hover,
+.contacts-link .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/*==================== /HEADER ====================*/
+
+/*==================== HERO ====================*/
+.hero {
+  background-color: var(--background-color-them-dark);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.hero-button {
+  background-color: var(--background-color-them-grey);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color-them-dark);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #2196f3;
+  color: var(--secondary-text-color);
+}
+/*==================== /HERO ====================*/
+
+/*==================== SECTION OUR ADVANTAGES ====================*/
+.advantage-titel {
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantage-text {
+  line-height: 1.71;
+  color: var(--primary-text-color-them-gray);
+}
+/*==================== /SECTION OUR ADVANTAGES ====================*/
+
+/*==================== SECTION WHAT ARE WE DOING ====================*/
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.visually-hidden {
+  display: none;
+}
+/*==================== SECTION WHAT ARE WE DOING ====================*/
+
+/*==================== SECTION OUR TEAM ====================*/
+.section-team {
+  background-color: var(--background-color-them-grey);
+}
+
+.team-list-titel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  /* text-align: center; */
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.9;
+  /* text-align: center; */
+  color: var(--primary-text-color-them-gray);
+}
+
+.team-list {
+  background-color: var(--background-color-them-white);
+}
+/*==================== SECTION OUR TEAM ====================*/
+
+/*==================== PORTFOLIO ====================*/
+.portfolio-button {
+  background-color: var(--background-color-them-grey);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color-them-dark);
+  cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: #2196f3;
+  color: var(--secondary-text-color);
+}
+
+.button-lists .portfolio-button.current {
+  background-color: #2196f3;
+  color: var(--secondary-text-color);
+}
+
+.portfolio-titel {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color-them-gray);
+}
+/*==================== /PORTFOLIO ====================*/
+
+/*==================== FOOTER ====================*/
+.footer {
+  background-color: var(--background-color-them-dark);
+}
+
+.logo-footer {
+  color: #ffffff;
+}
+
+.address-link {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.email,
+.tel {
+  font-style: normal;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link:hover,
+.address-link:focus,
+.email:hover,
+.email:focus,
+.tel:hover,
+.tel:focus {
+  color: var(--accent-color);
+}
+/*==================== /FOOTER ====================*/
