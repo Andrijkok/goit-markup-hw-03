@@ -117,15 +117,12 @@ body {
   line-height: 1.17;
   text-align: center;
 }
-
-.visually-hidden {
-  display: none;
-}
 /*==================== SECTION WHAT ARE WE DOING ====================*/
 
 /*==================== SECTION OUR TEAM ====================*/
 .section-team {
   background-color: var(--background-color-them-grey);
+  outline: 2px solid purple;
 }
 
 .team-list-titel {
