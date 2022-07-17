@@ -38,7 +38,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /*==================== HEADER ====================*/
@@ -49,22 +49,16 @@ body {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  align-items: center;
 }
 
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.phone-item {
-  margin-left: 50px;
-}
-
 .page-header {
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
-  background-color: rebeccapurple;
 }
 
 .menu-nav .logo {
@@ -86,17 +80,21 @@ body {
 }
 
 .site-nav .link {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-them-dark);
 }
 
+.contacts-link .contact-item + .contact-item {
+  margin-left: 50px;
+}
+
 .contacts-link .link {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -142,6 +140,7 @@ body {
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
+  border: 0;
   background-color: var(--background-color-them-grey);
   font-weight: 700;
   font-size: 16px;
@@ -163,16 +162,16 @@ body {
 .section-advantage {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: aqua;
 }
 
 .advantage-lists {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .advantage-list {
-  width: 270px;
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .advantage-titel {
@@ -206,7 +205,6 @@ body {
 /*==================== SECTION WHAT ARE WE DOING ====================*/
 .section-doing {
   padding-bottom: 94px;
-  background-color: aquamarine;
 }
 
 .section-title {
@@ -240,14 +238,13 @@ body {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
 }
 
 .team-text {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
   color: var(--primary-text-color-them-gray);
 }
 
@@ -270,7 +267,36 @@ body {
 /*==================== SECTION OUR TEAM ====================*/
 
 /*==================== PORTFOLIO ====================*/
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.button-lists {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.button-list + .button-list {
+  margin-left: 8px;
+}
+
+.portfolio-lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-list {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
 .portfolio-button {
+  display: inline-block;
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
   background-color: var(--background-color-them-grey);
   font-weight: 500;
   font-size: 16px;
@@ -292,13 +318,24 @@ body {
   color: var(--secondary-text-color);
 }
 
+.portfolio-card {
+  border: 1px solid #ececec;
+  border-top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
 .portfolio-titel {
+  margin-top: 0;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .portfolio-text {
+  margin: 0;
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color-them-gray);
