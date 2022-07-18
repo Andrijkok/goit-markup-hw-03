@@ -175,6 +175,7 @@ body {
 }
 
 .advantage-titel {
+  font-size: 14px;
   margin-top: 0;
   margin-bottom: 10px;
   line-height: 1.14;
@@ -268,7 +269,7 @@ body {
 .button-lists {
   display: flex;
   justify-content: center;
-  margin-bottom: 22px;
+  margin-bottom: 50px;
 }
 
 .button-list + .button-list {
