@@ -41,6 +41,11 @@ body {
   /* outline: 2px solid tomato; */
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+} 
+
 /*==================== HEADER ====================*/
 .page-header-flex,
 .menu-nav,
@@ -123,7 +128,7 @@ body {
 }
 
 .hero-title {
-  width: 700px;
+  width: 600px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -141,29 +146,24 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
   border: 0;
-  background-color: var(--background-color-them-grey);
+  background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--primary-text-color-them-dark);
+  color: var(--secondary-text-color);
   cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #2196f3;
-  color: var(--secondary-text-color);
+  background-color: var(--background-color-them-grey);
+  color: var(--primary-text-color-them-dark);
 }
 /*==================== /HERO ====================*/
 
 /*==================== SECTION OUR ADVANTAGES ====================*/
-.section-advantage {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .advantage-lists {
   display: flex;
   flex-wrap: wrap;
@@ -203,8 +203,8 @@ body {
 /*==================== /SECTION OUR ADVANTAGES ====================*/
 
 /*==================== SECTION WHAT ARE WE DOING ====================*/
-.section-doing {
-  padding-bottom: 94px;
+.doing {
+  padding-top: 0;
 }
 
 .section-title {
@@ -227,9 +227,7 @@ body {
 /*==================== SECTION WHAT ARE WE DOING ====================*/
 
 /*==================== SECTION OUR TEAM ====================*/
-.section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.team {
   background-color: var(--background-color-them-grey);
 }
 
@@ -267,11 +265,6 @@ body {
 /*==================== SECTION OUR TEAM ====================*/
 
 /*==================== PORTFOLIO ====================*/
-.section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .button-lists {
   display: flex;
   justify-content: center;
@@ -354,9 +347,8 @@ body {
 }
 
 .address-link {
-  display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 9px;
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
@@ -364,30 +356,29 @@ body {
   color: var(--secondary-text-color);
 }
 
-.email,
-.tel {
-  display: inline-block;
+.email-link,
+.tel-link {
+  margin: 0;
+  padding: 0;
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.email {
-  margin-top: 0;
-  margin-bottom: 9px;
-}
-
-.tel {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .address-link:hover,
 .address-link:focus,
-.email:hover,
-.email:focus,
-.tel:hover,
-.tel:focus {
-  color: var(--accent-color);
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+ color: var(--accent-color);
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.address-item,
+.email-item {
+  margin-bottom: 9px;
 }
 /*==================== /FOOTER ====================*/
